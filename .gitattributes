@@ -1,2 +1,8 @@
-# Auto detect text files and perform LF normalization
-* text=auto
+# Garder les fichiers Unreal intacts (binaire ou pas de conversion)
+*.uproject binary
+*.uplugin binary
+*.uasset binary
+*.umap binary
+
+# Forcer les fichiers de config en CRLF (standard Windows pour Unreal)
+*.ini text eol=crlf
